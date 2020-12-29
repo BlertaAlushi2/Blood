@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Blood;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -52,6 +54,13 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'city' => ['required', 'string', 'max:255'],
+            'country' => ['required', 'string', 'max:255'],
+            'age' => ['required', 'numeric'],
+            'personal_number' => ['required', 'numeric'],
+            'gender' => ['required'],
+            'blood_id'=>['required'],
+            'weigh'=>['required'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
@@ -67,7 +76,20 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'city' => $data['city'],
+            'country' => $data['country'],
+            'age' => $data['age'],
+            'personal_number' => $data['personal_number'],
+            'gender' => $data['gender'],
+            'blood_id' => $data['blood_id'],
+            'weigh' => $data['weigh'],
             'password' => Hash::make($data['password']),
         ]);
     }
+    public function showRegistrationForm()
+    {
+        $blood_groups= Blood::all();
+        return view('auth.register',['blood_groups'=>$blood_groups]);
+    }
+
 }

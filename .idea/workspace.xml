@@ -1,20 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2bfee9f-3a77-4d5a-97a1-2ceb4d6b4951" name="Default Changelist" comment="" />
+    <list default="true" id="b2bfee9f-3a77-4d5a-97a1-2ceb4d6b4951" name="Default Changelist" comment="">
+      <change afterPath="C:/$Recycle.Bin/S-1-5-21-3852777635-1189348196-942180962-1003/$RFF3DW7/sebastian/type/.idea/type.iml" afterDir="false" />
+      <change afterPath="C:/$Recycle.Bin/S-1-5-21-3852777635-1189348196-942180962-1003/$RHBSAUX/.idea/portali4.iml" afterDir="false" />
+      <change afterPath="C:/$Recycle.Bin/S-1-5-21-3852777635-1189348196-942180962-1003/$RNL0ICJ/.idea/taskmanager2.iml" afterDir="false" />
+      <change afterPath="C:/$Recycle.Bin/S-1-5-21-3852777635-1189348196-942180962-1003/$RSD7I97/.idea/portali2.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/PhpstormProjects/project1/.idea/project1.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/app/.idea/app.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/awesomeProject/.idea/awesomeProject.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/awesomeProject1/.idea/awesomeProject1.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/basics/.idea/basics.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/books/.idea/books.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/json/.idea/json.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/myapp/.idea/myapp.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/myapp2/.idea/myapp.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/myproject/.idea/myproject.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/nasa/.idea/myapp.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/projekti-baze/.idea/projekti-baze.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/projekti/.idea/projekti.iml" afterDir="false" />
+      <change afterPath="$USER_HOME$/go/src/websocket/.idea/websocket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Favorite/.idea/Favorite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Favorite/resources/js/components/Favorited.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Favorite/resources/js/components/Images.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Favorite/resources/views/layouts/favorite.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/js/components/Posts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/auth/register_student.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/layouts/alert_message.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/layouts/entry.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/layouts/modals.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/assignments/create_edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/assignments/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/assignments/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/assignments/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/courses/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/courses/new_edit_course.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/courses/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/resources/views/pages/courses/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/.idea/bookstore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/auth/layouts/auth.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/auth/layouts/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/auth/layouts/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/bookstore/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/layouts/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bookstore/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dita_13/.idea/dita_13.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraria/.idea/libraria.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraria/resources/js/components/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraria/resources/js/components/Posts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraria/resources/views/livewire.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../libraria/resources/views/vue.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portal/.idea/portal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/.idea/thephoton.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/js/components/Dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/js/components/Profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/views/auth/register_photographer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/views/layouts/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thephoton/resources/views/layouts/profile.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../wesurepro/resources/views/admin/sendMail.blade.php" afterDir="false" />
+      <change afterPath="C:/xampp/htdocs/Dita_5/.idea/Dita_5.iml" afterDir="false" />
+      <change afterPath="C:/xampp/htdocs/portal/.idea/portal.iml" afterDir="false" />
+      <change afterPath="C:/xampp/htdocs/portali/.idea/portali.iml" afterDir="false" />
+      <change afterPath="C:/xampp/htdocs/shkolla/.idea/shkolla.iml" afterDir="false" />
+      <change afterPath="C:/xampp/htdocs/taskmanager/resources/views/summer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/resources/views/person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Favorite/resources/views/guests.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/resources/views/portal/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/resources/views/portal/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/resources/views/portal/course.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/resources/views/portal/course.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../portal/resources/views/portal/lendet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/resources/views/portal/lendet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/Models/Discussion.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/Models/Discussion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/database/migrations/2019_03_02_060032_alt_user_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/database/migrations/2019_03_12_080843_create_discussions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/public/css/layout_admin_custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/public/css/layout_admin_custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/task/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/task/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/create_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/user/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/websites/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/websites/create_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/admin/websites/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/admin/websites/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/credits/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/credits/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/modals.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/modals.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/layouts/admin/include/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/task/create_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/task/create_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/resources/views/task/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/resources/views/task/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../taskmanager/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../taskmanager/routes/web.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/app/Helpers/Helper.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/app/Helpers/Helper.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/app/Helpers/helpers.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/app/Helpers/helpers.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/config/defaults.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/config/defaults.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/lang/en/messages.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/lang/sq/messages.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/lang/sq/messages.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/sass/portal.scss" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/sass/portal.scss" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/categories.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/categories.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/cities.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/cities.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/city.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/city.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/email.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/email.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/footer.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/footer.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/header.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/header.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/kategoria.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/kategoria.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/portali.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/portali.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/post.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/post.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/posts.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/posts.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/portal/sendMail.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/portal/sendMail.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/shop/products.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/shop/products.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/portal/resources/views/shop/viewCart.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/portal/resources/views/shop/viewCart.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/email.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/email.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/partial.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/partial.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/partial_page.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/partial_page.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/people.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/people.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/persons.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/persons.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/profiles_api.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/profiles_api.blade.php" afterDir="false" />
+      <change beforePath="C:/xampp/htdocs/shkolla/resources/views/sendMail.blade.php" beforeDir="false" afterPath="C:/xampp/htdocs/shkolla/resources/views/sendMail.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="C:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -131,6 +267,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -150,11 +287,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609179016805</updated>
-      <workItem from="1609179018458" duration="531000" />
+      <workItem from="1609179018458" duration="5685000" />
+      <workItem from="1609187107603" duration="990000" />
+      <workItem from="1609188154784" duration="888000" />
+      <workItem from="1609189221604" duration="736000" />
+      <workItem from="1609190046385" duration="2017000" />
+      <workItem from="1609192232596" duration="302000" />
+      <workItem from="1609192611086" duration="1189000" />
+      <workItem from="1609194331361" duration="3156000" />
+      <workItem from="1609256732553" duration="247000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1609256802178">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609256802178" />
   </component>
 </project>
