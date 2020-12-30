@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{route('addDonation')}}">
                                 <span class="sidebar-mini"> ND </span>
                                 <span class="sidebar-normal"> New Donation </span>
                             </a>
@@ -71,11 +71,29 @@
                     <p> Requests </p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="material-icons">list</i>
-                    <p> Camps </p>
+            <li class="nav-item ">
+                <a class="nav-link" data-toggle="collapse" href="#camps">
+                    <i class="material-icons">image</i>
+                    <p> Camps
+                        <b class="caret"></b>
+                    </p>
                 </a>
+                <div class="collapse" id="camps">
+                    <ul class="nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{{ route('camps') }}">
+                                <span class="sidebar-mini"> C </span>
+                                <span class="sidebar-normal"> Camps </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link cc" href="{{ route('addCamp') }}">
+                                <span class="sidebar-mini"> NC</span>
+                                <span class="sidebar-normal"> New Camp</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('bloodGroup')}}">

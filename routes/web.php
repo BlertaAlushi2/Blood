@@ -34,7 +34,26 @@ Route::post('/save/user','UserController@saveUser')->name('saveUser');
 Route::get('/edit/user/{id}','UserController@editUser')->name('editUser');
 Route::post('/update/user/{id}','UserController@updateUser')->name('updateUser');
 
+Route::get('/add/camp','CampController@addCamp')->name('addCamp');
+Route::post('/save/user','CampController@saveCamp')->name('saveCamp');
+
+Route::get('/edit/camp/{id}','CampController@editCamp')->name('editCamp');
+Route::post('/update/camp/{id}','CampController@updateCamp')->name('updateCamp');
+
+Route::post('/delete/camp/{id}','CampController@deleteCamp')->name('deleteCamp');
+
 Route::post('/delete/user/{id}','UserController@deleteUser')->name('deleteUser');
 
 Route::get('/users','UserController@users')->name('users');
 
+Route::get('/camps','CampController@camps')->name('camps');
+
+Route::get('/add/donation','DonationController@addDonation')->name('addDonation');
+Route::post('/save/donation','DonationController@saveDonation')->name('saveDonation');
+
+Route::get('/edit/donation/{id}','DonationController@editDonation')->name('editDonation');
+Route::post('/update/donation/{id}','DonationController@updateDonation')->name('updateDonation');
+
+Route::post('/delete/donation/{id}','DonationController@deleteDonation')->name('deleteDonation');
+
+Route::post('/search/user','DonationController@searchUser')->name('searchUser');

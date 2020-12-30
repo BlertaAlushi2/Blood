@@ -1,0 +1,167 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title">New Donation</h4>
+                            <p class="card-category">Add new Donation</p>
+                        </div>
+                        <div class="card-body">
+                                <form method="POST" action="{{route('searchUser')}}" class="search_form mb-4" >
+                                    @csrf
+                                    <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Personal Number</label>
+                                            <input type="number" class="form-control" name="personal_number" value="{{old('personal_number')}}">
+                                            @error('personal_number')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary pull-right btn_search">Search</button>
+                                    </div>
+                                </form>
+                            <form method="POST" action="{{ route('saveDonation')}}" enctype="multipart/form-data">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Name</label>
+                                            <input type="text" class="form-control" name="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Age</label>
+                                            <input type="number" class="form-control" name="age">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">City</label>
+                                            <input type="text" class="form-control" name="city">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Country</label>
+                                            <input type="text" class="form-control" name="country">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Camp</label>
+                                            <select class="form-control" id="blood_id" name="camp_id">
+                                                @foreach($camps as $camp)
+                                                    <option
+                                                        value = "{{$camp->id}}" @if(old('camp') == $camp->id) selected="selected" @endif>{{ $camp->title }}</option>
+                                                @endforeach
+                                            </select>
+                                            @error('camp_id')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Blood Group</label>
+                                            <select class="form-control" id="blood_id" name="blood_id">
+                                                @foreach($blood_groups as $group_blood)
+                                                    <option
+                                                        value = "{{$group_blood->id}}" @if(old('blood_id',isset($user) ? $user->blood_id:'') == $group_blood->id) selected="selected" @endif>{{ $group_blood->name }}</option>
+                                                @endforeach
+                                            </select>
+                                            @error('blood_id')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Quantity</label>
+                                            <input type="text" class="form-control" name="quantity" value="{{old('quantity')}}">
+                                            @error('quantity')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="bmd-label-floating">Details</label>
+                                            <textarea class="form-control" name="details" rows="5"></textarea>
+                                            @error('details')
+                                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                            @enderror
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary pull-right">New Donation</button>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+@section('style')
+    <style>
+        .invalid-feedback{
+            display:unset!important;
+        }
+    </style>
+@endsection
+@section('jQuery')
+    <script>
+        $(document).ready(function () {
+            $('.alertBox').hide();
+        });
+        $(document).on('click', '.btn_search', function (e) {
+            e.preventDefault();
+            let action = $('.search_form').attr('action');
+            let personal_number = $("input[name=personal_number]").val();
+            console.log(action, personal_number);
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                type: 'POST',
+                url: action,
+                data: {
+                    personal_number: personal_number,
+                },
+                success: function (data) {
+                    console.log(data);
+                    if(data.hasOwnProperty('user')){
+                        $("input[name=name]").val(data.user.name);
+                        $("input[name=age]").val(data.user.age);
+                        $("input[name=city]").val(data.user.city);
+                        $("input[name=country]").val(data.user.country);
+                    }
+                }
+            });
+        });
+    </script>
+    @endsection
