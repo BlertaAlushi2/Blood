@@ -57,7 +57,7 @@ class RegisterController extends Controller
             'city' => ['required', 'string', 'max:255'],
             'country' => ['required', 'string', 'max:255'],
             'age' => ['required', 'numeric'],
-            'personal_number' => ['required', 'numeric'],
+            'personal_number' => ['required', 'numeric','unique:users'],
             'gender' => ['required'],
             'blood_id'=>['required'],
             'weigh'=>['required'],

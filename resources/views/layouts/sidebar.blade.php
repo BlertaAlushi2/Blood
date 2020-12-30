@@ -26,13 +26,13 @@
                 <div class="collapse" id="courses">
                     <ul class="nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('users') }}">
                                 <span class="sidebar-mini"> U </span>
                                 <span class="sidebar-normal"> Users </span>
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link cc" href="#">
+                            <a class="nav-link cc" href="{{ route('addUser') }}">
                                 <span class="sidebar-mini"> NU</span>
                                 <span class="sidebar-normal"> New User</span>
                             </a>
@@ -75,6 +75,12 @@
                 <a class="nav-link" href="#">
                     <i class="material-icons">list</i>
                     <p> Camps </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('bloodGroup')}}">
+                    <i class="material-icons">list</i>
+                    <p> Blood Groups </p>
                 </a>
             </li>
         </ul>
