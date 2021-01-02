@@ -147,5 +147,6 @@ return [
     */
 
     'attributes' => [],
+    'not_found'=>'No user is found!',
 
 ];

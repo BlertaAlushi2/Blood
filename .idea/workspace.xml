@@ -20,10 +20,14 @@
       <change afterPath="$USER_HOME$/go/src/projekti-baze/.idea/projekti-baze.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/go/src/projekti/.idea/projekti.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/go/src/websocket/.idea/websocket.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/campTable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/camps.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/newDonation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/newEditCamp.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/donations.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/editDonation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/editRequest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/newRequest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/requests.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tableBloodBank.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tableDonation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/tableRequests.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Favorite/.idea/Favorite.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Favorite/resources/js/components/Favorited.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Favorite/resources/js/components/Images.vue" afterDir="false" />
@@ -71,7 +75,37 @@
       <change afterPath="C:/xampp/htdocs/shkolla/.idea/shkolla.iml" afterDir="false" />
       <change afterPath="C:/xampp/htdocs/taskmanager/resources/views/summer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Blood.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Blood.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Donation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Donation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CampController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CampController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DonationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DonationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_30_222036_create_donations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_30_222036_create_donations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/scss/material-dashboard/bootstrap/scss/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/scss/material-dashboard/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/formValidation/js/formValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/formValidation/js/formValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/formValidation/js/formValidation.popular.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/formValidation/js/formValidation.popular.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/newBloodGroup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newBloodGroup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/newDonation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newDonation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/usersTable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/usersTable.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/resources/views/person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Favorite/resources/views/guests.blade.php" afterDir="false" />
@@ -303,7 +337,9 @@
       <workItem from="1609283847667" duration="971000" />
       <workItem from="1609284972308" duration="521000" />
       <workItem from="1609285870207" duration="8076000" />
-      <workItem from="1609360783125" duration="9980000" />
+      <workItem from="1609360783125" duration="10402000" />
+      <workItem from="1609509795025" duration="24640000" />
+      <workItem from="1609572442261" duration="42248000" />
     </task>
     <servers />
   </component>
@@ -315,13 +351,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="519" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1609285137438" />
-    <state x="499" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609368362516">
+    <state x="523" y="9" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609538916398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609368362516" />
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1609360858923">
+    <state x="523" y="9" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1609538916398" />
+    <state x="499" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609614615478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609360858923" />
+    <state x="499" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609614615478" />
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1609572447518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609572447518" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609614451367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609614451367" />
   </component>
 </project>

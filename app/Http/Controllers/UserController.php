@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\View;
 class UserController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('admin')->except('viewProfile','editProfile');
+        $this->middleware('verified');
+    }
     public function viewProfile()
     {
         $blood_groups = Blood::all();

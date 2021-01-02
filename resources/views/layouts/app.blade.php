@@ -85,6 +85,28 @@
 @yield('jQuery')
 <script>
     $(document).ready(function() {
+        if($('.hasText b').text().length>0)
+        setTimeout(function () {
+            $('.hasText b').text('');
+        }, 3000);
+    });
+        $(document).on('click','.readNotifications', function(e){
+            console.log(11111111111111);
+            let action = $('.readNotifications').attr('href');
+            $.ajax({
+                type: 'GET',
+                url: action,
+                success: function (data) {
+                    // var messages_table = $(".messages_table");
+                    // messages_table.html("");
+                    // messages_table.html(data)
+                    console.log(data);
+                    $('.readNotifications span').hide();
+
+                }
+            });
+        });
+    $(document).ready(function() {
         $('.js-dataTable-full').DataTable();
         let sidebar = document.getElementsByClassName('sidebar-wrapper');
         // let sidebarURLs = sidebar[0].getElementsByClassName('nav-link');
@@ -115,7 +137,7 @@
                 console.log(data.table);
                 $('.alertBox').show();
                 $('.alertBox div').addClass('alert-'+data.status);
-                $('.message').text(data.message)
+                $('.message').text(data.message);
                     setTimeout(function () {
                         $('#deleteModal').modal('hide');
                         // window.location.href=data.url

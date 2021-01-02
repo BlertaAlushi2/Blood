@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
-Auth::routes();
+Auth::routes(['verify'=>true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 Route::get('/profile','UserController@viewProfile')->name('profile');
 Route::post('/editProfile/{id}','UserController@editProfile')->name('editProfile');
@@ -57,3 +57,19 @@ Route::post('/update/donation/{id}','DonationController@updateDonation')->name('
 Route::post('/delete/donation/{id}','DonationController@deleteDonation')->name('deleteDonation');
 
 Route::post('/search/user','DonationController@searchUser')->name('searchUser');
+
+Route::get('/donations','DonationController@donations')->name('donations');
+
+Route::get('/add/request','RequestController@addRequest')->name('addRequest');
+Route::post('/save/request','RequestController@saveRequest')->name('saveRequest');
+
+Route::get('/edit/request/{id}','RequestController@editRequest')->name('editRequest');
+Route::post('/update/request/{id}','RequestController@updateRequest')->name('updateRequest');
+
+Route::post('/delete/request/{id}','RequestController@deleteRquest')->name('deleteRequest');
+Route::get('/requests','RequestController@requests')->name('requests');
+
+Route::get('/readNotifications',"HomeController@readNotifications")->name('readNotifications');
+
+Route::get('/confirm/donation/{id}','DonationController@confirmDonation')->name('confirmDonation');
+Route::get('/confirm/request/{id}','RequestController@confirmRequest')->name('confirmRequest');

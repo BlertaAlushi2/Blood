@@ -2,7 +2,9 @@
 <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
     <div class="container-fluid">
         <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+            @if(Route::currentRouteName() === 'home')
+            <a class="navbar-brand" href="javascript:;"> Dashboard</a>
+                @endif
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -30,19 +32,23 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link readNotifications" href="{{ route('readNotifications') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="material-icons">notifications</i>
-                        <span class="notification">5</span>
+                        @if(count(Auth::user()->unreadNotifications)>0)
+                        <span class="notification">{{ count(Auth::user()->unreadNotifications) }}</span>
+                        @endif
                         <p class="d-lg-none d-md-block">
                             Some Actions
                         </p>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Mike John responded to your email</a>
-                        <a class="dropdown-item" href="#">You have 5 new tasks</a>
-                        <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-                        <a class="dropdown-item" href="#">Another Notification</a>
-                        <a class="dropdown-item" href="#">Another One</a>
+                        @if(count(Auth::user()->unreadNotifications)>0)
+                        @foreach(Auth::user()->unreadNotifications as $notification)
+                        <a class="dropdown-item" href="#">Your blood request at {{ $notification->data['request_date']}} is {{ !$notification->data['confirmed']?"not " :"" }}aproved</a>
+                            @endforeach
+                            @else
+                            <a class="dropdown-item" href="#">There is no new notification</a>
+                        @endif
                     </div>
                 </li>
                 <li class="nav-item dropdown">

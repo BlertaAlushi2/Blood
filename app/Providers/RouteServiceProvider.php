@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
@@ -33,6 +35,9 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+        Blade::if('admin', function () {
+            return auth()->user() && Auth::user()->role === 1;
+        });
     }
 
     /**

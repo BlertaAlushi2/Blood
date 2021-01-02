@@ -10,7 +10,7 @@
                             <h4 class="card-title mt-0">Blood Groups</h4>
 
                             @if(session()->has('success'))
-                                <p class="text-success mb-0"><b>
+                                <p class="text-success mb-0 hasText"><b>
                                         {{ session()->get('success') }}</b>
                                 </p>
                             @endif

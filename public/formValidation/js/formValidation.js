@@ -3218,7 +3218,7 @@ if (typeof jQuery === 'undefined') {
             if (creditCard === '') {
                 return true;
             }
-            
+
             creditCard = creditCard.replace(/\D/g, '');
 
             // Supported credit card types
@@ -4107,7 +4107,7 @@ if (typeof jQuery === 'undefined') {
             if (value === '') {
                 return true;
             }
-            
+
             value = this._format(value);
 
             var locale         = validator.getLocale(),
@@ -4809,7 +4809,7 @@ if (typeof jQuery === 'undefined') {
             if (!/^\d{15}$/.test(value) && !/^\d{17}[\dXx]{1}$/.test(value)) {
                 return false;
             }
-            
+
             // Check China PR Administrative division code
             var adminDivisionCodes = {
                 11: {
@@ -5263,11 +5263,11 @@ if (typeof jQuery === 'undefined') {
                 81: { 0: [0] },
                 82: { 0: [0] }
             };
-            
+
             var provincial  = parseInt(value.substr(0, 2), 10),
                 prefectural = parseInt(value.substr(2, 2), 10),
                 county      = parseInt(value.substr(4, 2), 10);
-            
+
             if (!adminDivisionCodes[provincial] || !adminDivisionCodes[provincial][prefectural]) {
                 return false;
             }
@@ -5285,12 +5285,12 @@ if (typeof jQuery === 'undefined') {
             if (!inRange) {
                 return false;
             }
-            
+
             // Check date of birth
             var dob;
             if (value.length === 18) {
                 dob = value.substr(6, 8);
-            } else /* length == 15 */ { 
+            } else /* length == 15 */ {
                 dob = '19' + value.substr(6, 6);
             }
             var year  = parseInt(dob.substr(0, 4), 10),
@@ -5299,7 +5299,7 @@ if (typeof jQuery === 'undefined') {
             if (!FormValidation.Helper.date(year, month, day)) {
                 return false;
             }
-            
+
             // Check checksum (18-digit system only)
             if (value.length === 18) {
                 var sum    = 0,
@@ -5311,10 +5311,10 @@ if (typeof jQuery === 'undefined') {
                 var checksum = (value.charAt(17).toUpperCase() !== 'X') ? parseInt(value.charAt(17), 10) : 10;
                 return checksum === sum;
             }
-            
+
             return true;
         },
-        
+
         /**
          * Validate Czech national identification number (RC)
          *
@@ -5461,7 +5461,7 @@ if (typeof jQuery === 'undefined') {
                 if (lastDigit !== 0) {
                     lastDigit = 10 - lastDigit;
                 }
-                
+
                 if ('KQS'.indexOf(letter) !== -1) {
                     // If the CIF starts with a K, Q or S, the control digit must be a letter
                     isValid = (control === 'JABCDEFGHI'[lastDigit]);
@@ -5703,10 +5703,10 @@ if (typeof jQuery === 'undefined') {
             }
             return (sum + '' === value.charAt(length - 1));
         },
-        
+
         /**
          * Validate Poland citizen number (PESEL)
-         * 
+         *
          * @see http://en.wikipedia.org/wiki/National_identification_number#Poland
          * @see http://en.wikipedia.org/wiki/PESEL
          * @param {String} value The ID
@@ -6024,7 +6024,7 @@ if (typeof jQuery === 'undefined') {
             if (!/^IMO \d{7}$/i.test(value)) {
                 return false;
             }
-            
+
             // Grab just the digits
             var sum    = 0,
                 digits = value.replace(/^.*(\d{7})$/, '$1');
@@ -6484,7 +6484,7 @@ if (typeof jQuery === 'undefined') {
             if (value === '') {
                 return true;
             }
-            
+
 			value = this._format(value);
 
             var locale         = validator.getLocale(),
@@ -6810,7 +6810,7 @@ if (typeof jQuery === 'undefined') {
                     value   = $.trim(value);
                     isValid = (/^(((\+|00)?971[\s\.-]?(\(0\)[\s\.-]?)?|0)(\(5(0|2|5|6)\)|5(0|2|5|6)|2|3|4|6|7|9)|60)([\s\.-]?[0-9]){7}$/).test(value);
                     break;
-                    
+
                 case 'BG':
                     // https://regex101.com/r/yE6vN4/1
                     // See http://en.wikipedia.org/wiki/Telephone_numbers_in_Bulgaria
@@ -6875,7 +6875,7 @@ if (typeof jQuery === 'undefined') {
                     value   = $.trim(value);
                     isValid = (/^\(?(?:(?:0(?:0|11)\)?[\s-]?\(?|\+)44\)?[\s-]?\(?(?:0\)?[\s-]?\(?)?|0)(?:\d{2}\)?[\s-]?\d{4}[\s-]?\d{4}|\d{3}\)?[\s-]?\d{3}[\s-]?\d{3,4}|\d{4}\)?[\s-]?(?:\d{5}|\d{3}[\s-]?\d{3})|\d{5}\)?[\s-]?\d{4,5}|8(?:00[\s-]?11[\s-]?11|45[\s-]?46[\s-]?4\d))(?:(?:[\s-]?(?:x|ext\.?\s?|\#)\d+)?)$/).test(value);
                     break;
-            
+
                 case 'IN':
                     // http://stackoverflow.com/questions/18351553/regular-expression-validation-for-indian-phone-number-and-mobile-number
                     // http://regex101.com/r/qL6eZ5/1
@@ -6883,21 +6883,21 @@ if (typeof jQuery === 'undefined') {
                     value   = $.trim(value);
                     isValid = (/((\+?)((0[ -]+)*|(91 )*)(\d{12}|\d{10}))|\d{5}([- ]*)\d{6}/).test(value);
                     break;
-                    
+
                 case 'MA':
                     // http://en.wikipedia.org/wiki/Telephone_numbers_in_Morocco
                     // http://regexr.com/399n8
                     value   = $.trim(value);
                     isValid = (/^(?:(?:(?:\+|00)212[\s]?(?:[\s]?\(0\)[\s]?)?)|0){1}(?:5[\s.-]?[2-3]|6[\s.-]?[13-9]){1}[0-9]{1}(?:[\s.-]?\d{2}){3}$/).test(value);
                     break;
-                
+
                 case 'NL':
                     // http://en.wikipedia.org/wiki/Telephone_numbers_in_the_Netherlands
                     // http://regexr.com/3aevr
                     value   = $.trim(value);
                     isValid = (/^((\+|00(\s|\s?\-\s?)?)31(\s|\s?\-\s?)?(\(0\)[\-\s]?)?|0)[1-9]((\s|\s?\-\s?)?[0-9])((\s|\s?-\s?)?[0-9])((\s|\s?-\s?)?[0-9])\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]\s?[0-9]$/gm).test(value);
                     break;
-                
+
                 case 'PK':
                     // http://regex101.com/r/yH8aV9/2
                     value   = $.trim(value);
@@ -6930,7 +6930,7 @@ if (typeof jQuery === 'undefined') {
                     value   = $.trim(value);
                     isValid = (/^0(?:2(?:12|4[0-9]|5[1-9]|6[0-9]|7[0-8]|8[1-35-8]|9[1-5]|3[45789])|4(?:1[246]|2[46]))\d{7}$/).test(value);
                     break;
-  
+
                 case 'US':
                 /* falls through */
                 default:
@@ -7099,7 +7099,7 @@ if (typeof jQuery === 'undefined') {
         },
 
         /**
-         * Request a remote server to check the input value
+         * RequestController a remote server to check the input value
          *
          * @param {FormValidation.Base} validator Plugin instance
          * @param {jQuery} $field Field element
@@ -7184,7 +7184,7 @@ if (typeof jQuery === 'undefined') {
 
                 return dfd;
             }
-            
+
             if (options.delay) {
                 // Since the form might have multiple fields with the same name
                 // I have to attach the timer to the field element
@@ -8007,7 +8007,7 @@ if (typeof jQuery === 'undefined') {
 
             return false;
         },
-        
+
         /**
          * Validate Brazilian VAT number (CNPJ)
          *

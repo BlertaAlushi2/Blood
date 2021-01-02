@@ -7,17 +7,17 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title mt-0">Users</h4>
+                            <h4 class="card-title mt-0">Camps</h4>
 
                             @if(session()->has('success'))
-                                <p class="text-success mb-0"><b>
+                                <p class="text-success mb-0 hasText"><b>
                                         {{ session()->get('success') }}</b>
                                 </p>
                             @endif
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                @include('pages.usersTable')
+                                @include('pages.tableRequests')
                             </div>
                         </div>
                     </div>

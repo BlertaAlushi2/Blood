@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\View;
 
 class CampController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('admin');
+        $this->middleware('verified');
+    }
     public function addCamp(){
         return view('pages.newEditCamp');
     }

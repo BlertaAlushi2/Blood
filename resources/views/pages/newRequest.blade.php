@@ -7,13 +7,13 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">New Donation</h4>
-                            <p class="card-category">Add new Donation</p>
+                            <h4 class="card-title">New Request</h4>
+                            <p class="card-category">Make new request</p>
                         </div>
                         <div class="card-body">
-                                <form method="POST" action="{{route('searchUser')}}" class="search_form mb-4" >
-                                    @csrf
-                                    <div class="row">
+                            <form method="POST" action="{{route('searchUser')}}" class="search_form mb-4" >
+                                @csrf
+                                <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Personal Number</label>
@@ -29,12 +29,12 @@
                                             @enderror
                                         </div>
                                     </div>
-                                <div>
-                                    <button type="submit" class="btn btn-primary pull-right btn_search">Search</button>
-                                </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary pull-right btn_search">Search</button>
                                     </div>
-                                </form>
-                            <form method="POST" action="{{ route('saveDonation')}}" enctype="multipart/form-data">
+                                </div>
+                            </form>
+                            <form method="POST" action="{{ route('saveRequest')}}" enctype="multipart/form-data">
                                 @csrf
                                 <input type="hidden" name="user_id" value="">
                                 <div class="row">
@@ -66,23 +66,6 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">Camp</label>
-                                            <select class="form-control camp" id="blood_id" name="camp_id">
-                                                @foreach($camps as $camp)
-                                                    <option
-                                                        value = "{{$camp->id}}" @if(old('camp') == $camp->id) selected="selected" @endif>{{ $camp->title }}</option>
-                                                @endforeach
-                                            </select>
-                                            @error('camp_id')
-                                            <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                            @enderror
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="form-group">
                                             <label class="bmd-label-floating">Blood Group</label>
                                             <select class="form-control blood_group" id="blood_id" name="blood_id">
                                                 @foreach($blood_groups as $group_blood)
@@ -97,8 +80,6 @@
                                             @enderror
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Quantity</label>
@@ -112,9 +93,9 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="bmd-label-floating">Donation Date</label>
-                                            <input type="date" class="form-control" placeholder="" name="donation_date" value="{{old('donation_date')}}">
-                                            @error('donation_date')
+                                            <label class="bmd-label-floating">Request Date</label>
+                                            <input type="date" class="form-control" placeholder="" name="request_date" value="{{old('request_date')}}">
+                                            @error('request_date')
                                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -122,25 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Details</label>
-                                            <textarea class="form-control" name="details" rows="5"></textarea>
-                                            @error('details')
-                                            <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                            @enderror
-                                        </div>
-                                    </div>
-                                </div>
-                                @if(session()->has('error'))
-                                    <p class="text-danger mb-0" ><b>
-                                            {{ session()->get('error') }}</b>
-                                    </p>
-                                @endif
-                                <button type="submit" class="btn btn-primary pull-right">New Donation</button>
+                                <button type="submit" class="btn btn-primary pull-right">New Request</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>
@@ -161,7 +124,7 @@
     <script>
         $(document).ready(function () {
             $('.alertBox').hide();
-           $('input[name=donation_date]').parent().addClass('is-filled')
+            $('input[name=request_date]').parent().addClass('is-filled')
         });
         $(document).on('click', '.btn_search', function (e) {
             e.preventDefault();
@@ -200,4 +163,4 @@
             });
         });
     </script>
-    @endsection
+@endsection

@@ -193,7 +193,7 @@
                             </a>
                         </div>
                         <div class="card-body">
-                            <h6 class="card-category text-gray">{{ strtoupper($user->role)}}</h6>
+                            <h6 class="card-category text-gray">{{ strtoupper($user->role === 1 ? "ADMIN" : "USER")}}</h6>
                             <h4 class="card-title">{{ $user->name }}</h4>
                         </div>
                     </div>

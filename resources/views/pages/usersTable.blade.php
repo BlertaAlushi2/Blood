@@ -52,7 +52,7 @@
                     {{ $user->weigh }}
                 </td>
                 <td>
-                    {{ $user->blood_group }}
+                    {{ $user->blood->name }}
                 </td>
                 <td>
                     {{ $user->frequency }}
@@ -64,10 +64,10 @@
                     {{ $user->country }}
                 </td>
                 <td>
-                    {{ $user->status }}
+                    {{ $user->status === 1 ?  "Active" : "Deactive"}}
                 </td>
                 <td>
-                    {{ $user->role }}
+                    {{ $user->role === 1 ?  "Admin" : "User"}}
                 </td>
                 <td>
                     <button type="button" rel="tooltip" title="Edit" class="btn btn-info btn-link btn-sm">

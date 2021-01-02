@@ -16,6 +16,7 @@
                     <p> Dashboard </p>
                 </a>
             </li>
+            @if(Auth::user()->role === 1)
             <li class="nav-item ">
                 <a class="nav-link" data-toggle="collapse" href="#courses">
                     <i class="material-icons">image</i>
@@ -50,7 +51,7 @@
                 <div class="collapse" id="assignments">
                     <ul class="nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('donations') }}">
                                 <span class="sidebar-mini"> D </span>
                                 <span class="sidebar-normal"> Donations</span>
                             </a>
@@ -63,13 +64,6 @@
                         </li>
                     </ul>
                 </div>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="material-icons">list</i>
-                    <p> Requests </p>
-                </a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" data-toggle="collapse" href="#camps">
@@ -95,12 +89,44 @@
                     </ul>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{route('bloodGroup')}}">
-                    <i class="material-icons">list</i>
-                    <p> Blood Groups </p>
-                </a>
-            </li>
+                <li class="nav-item ">
+                    <a class="nav-link" data-toggle="collapse" href="#requests">
+                        <i class="material-icons">image</i>
+                        <p> Requests
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="requests">
+                        <ul class="nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{{ route('requests') }}">
+                                    <span class="sidebar-mini"> C </span>
+                                    <span class="sidebar-normal"> Requests </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link cc" href="{{ route('addRequest') }}">
+                                    <span class="sidebar-mini"> NR</span>
+                                    <span class="sidebar-normal"> New Request</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('bloodGroup')}}">
+                        <i class="material-icons">list</i>
+                        <p> Blood Groups </p>
+                    </a>
+                </li>
+                @else
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('requests')}}">
+                        <i class="material-icons">list</i>
+                        <p> Blood Requests </p>
+                    </a>
+                </li>
+                @endif
         </ul>
     </div>
 </div>
