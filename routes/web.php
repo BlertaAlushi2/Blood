@@ -29,8 +29,6 @@ Route::post('/edit/blood/{id}','UserController@editBloodGroup')->name('editBlood
 Route::post('/delete/blood/{id}','UserController@deleteBloodGroup')->name('deleteBloodGroup');
 
 Route::get('/add/user','UserController@addUser')->name('addUser');
-Route::post('/save/user','UserController@saveUser')->name('saveUser');
-
 Route::get('/edit/user/{id}','UserController@editUser')->name('editUser');
 Route::post('/update/user/{id}','UserController@updateUser')->name('updateUser');
 
@@ -73,3 +71,5 @@ Route::get('/readNotifications',"HomeController@readNotifications")->name('readN
 
 Route::get('/confirm/donation/{id}','DonationController@confirmDonation')->name('confirmDonation');
 Route::get('/confirm/request/{id}','RequestController@confirmRequest')->name('confirmRequest');
+Route::post('/save/user','UserController@saveUser')->name('saveUser');
+

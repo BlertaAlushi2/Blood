@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title">New Request</h4>
                             <p class="card-category">Make new request</p>
                         </div>
@@ -30,7 +30,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <button type="submit" class="btn btn-primary pull-right btn_search">Search</button>
+                                        <button type="submit" class="btn btn-danger pull-right btn_search">Search</button>
                                     </div>
                                 </div>
                             </form>
@@ -103,7 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary pull-right">New Request</button>
+                                <button type="submit" class="btn btn-danger pull-right">New Request</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

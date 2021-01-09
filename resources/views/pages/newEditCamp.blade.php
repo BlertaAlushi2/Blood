@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title"> @if(isset($camp))Edit @else New @endif Camp</h4>
                             <p class="card-category">Add or Edit Camp</p>
                         </div>
@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary pull-right">@if(isset($camp))Edit @else New @endif Camp</button>
+                                <button type="submit" class="btn btn-danger pull-right">@if(isset($camp))Edit @else New @endif Camp</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

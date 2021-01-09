@@ -6,12 +6,12 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title"> @if(isset($user))Edit @else New @endif User</h4>
                             <p class="card-category">Complete your profile</p>
                         </div>
                         <div class="card-body">
-                            <form method="POST" action="{{ isset($user) ? route('updateUser',$user->id) : route('saveUser')}}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ !isset($user) ? route('saveUser') : route('updateUser',$user->id)}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-5">
@@ -193,7 +193,7 @@
                                     </div>
                                 </div>
                                 @endif
-                                <button type="submit" class="btn btn-primary pull-right">@if(isset($user))Edit @else New @endif User</button>
+                                <button type="submit" class="btn btn-danger pull-right">@if(isset($user))Edit @else New @endif User</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

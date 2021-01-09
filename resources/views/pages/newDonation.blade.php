@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title">New Donation</h4>
                             <p class="card-category">Add new Donation</p>
                         </div>
@@ -30,7 +30,7 @@
                                         </div>
                                     </div>
                                 <div>
-                                    <button type="submit" class="btn btn-primary pull-right btn_search">Search</button>
+                                    <button type="submit" class="btn btn-danger pull-right btn_search">Search</button>
                                 </div>
                                     </div>
                                 </form>
@@ -140,7 +140,7 @@
                                             {{ session()->get('error') }}</b>
                                     </p>
                                 @endif
-                                <button type="submit" class="btn btn-primary pull-right">New Donation</button>
+                                <button type="submit" class="btn btn-danger pull-right">New Donation</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

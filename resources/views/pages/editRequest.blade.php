@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title">Edit Request</h4>
                             <p class="card-category">Edit existing Request</p>
                         </div>
@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary pull-right" @if($request->confirm_request)disabled="disabled"@endif>Update Request</button>
+                                <button type="submit" class="btn btn-danger pull-right" @if($request->confirm_request)disabled="disabled"@endif>Update Request</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

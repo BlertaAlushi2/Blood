@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title mt-0">Blood Groups</h4>
 
                             @if(session()->has('success'))
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title">New Blood Group</h4>
                             <p class="card-category">Add new blood group</p>
                         </div>
@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary pull-right">New Blood Group</button>
+                                <button type="submit" class="btn btn-danger pull-right">New Blood Group</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

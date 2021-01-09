@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title">Edit Donation</h4>
                             <p class="card-category">Edit existing Donation</p>
                         </div>
@@ -119,7 +119,7 @@
                                     </p>
                                 @endif
 
-                                <button type="submit" class="btn btn-primary pull-right" @if($donation->confirm_donation)disabled="disabled"@endif>Update Donation</button>
+                                <button type="submit" class="btn btn-danger pull-right" @if($donation->confirm_donation)disabled="disabled"@endif>Update Donation</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

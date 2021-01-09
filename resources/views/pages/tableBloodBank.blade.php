@@ -22,7 +22,7 @@
                     {{ $blood->blood->name }}
                 </td>
                 <td>
-                    {{ $blood->quantity }} g
+                    {{ $blood->quantity }} l
                 </td>
             </tr>
         @endforeach

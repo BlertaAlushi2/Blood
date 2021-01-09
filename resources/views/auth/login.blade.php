@@ -1,73 +1,138 @@
 @extends('layouts.entry')
-
+@section('title', 'Blood Donation')
+@section('pageCss')
+    .input-group{
+    padding-bottom: 10px;
+    margin: 17px 0 0;
+    }
+    .card-footer{
+    padding:0px!important;
+    padding-bottom:10px!important;
+    }
+    .wrapper {
+    position: relative;
+    top: 0;
+    min-height: 100vh;
+    height: auto;
+    }
+@endsection
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top text-white">
+        <div class="container">
+            <div class="navbar-wrapper">
+                <a class="navbar-brand" href="http://www.blood.test">BBMS</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon icon-bar"></span>
+                <span class="navbar-toggler-icon icon-bar"></span>
+                <span class="navbar-toggler-icon icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="{{route('register')}}" class="nav-link">
+                            <i class="material-icons">person_add</i>
+                            Register
+                        </a>
+                    </li>
+                    <li class="nav-item  active ">
+                        <a href="{{route('login')}}" class="nav-link">
+                            <i class="material-icons">fingerprint</i>
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="{{route('password.request')}}" class="nav-link">
+                            <i class="material-icons">lock_outline</i>
+                            Forgot Password
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="wrapper wrapper-full-page">
+        <div class="page-header login-page header-filter" filter-color="black"
+             style="background-image: url('{{asset('assets/img/blood2.png')}}'); background-size: cover; background-position: top center;">
+            <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
+                        <form class="form" action="{{ route('login') }}" method="POST">
+                            @csrf
+                            <div class="card card-login card-hidden">
+                                <div class="card-header card-header-danger text-center">
+                                    <h4 class="card-title pt-3 pb-2"><b>Login</b></h4>
+{{--                                    <div class="social-line">--}}
+{{--                                        <a href="#pablo" class="btn btn-just-icon btn-link btn-white">--}}
+{{--                                            <i class="fa fa-facebook-square"></i>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#pablo" class="btn btn-just-icon btn-link btn-white">--}}
+{{--                                            <i class="fa fa-twitter"></i>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#pablo" class="btn btn-just-icon btn-link btn-white">--}}
+{{--                                            <i class="fa fa-google-plus"></i>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
+                                </div>
+                                <div class="card-body ">
+
+                                    <span class="bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">email</i>
+                        </span>
+                      </div>
+                      <input type="email" class="form-control" placeholder="Email..." name="email">
+                         @if ($errors->has('email'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                  </span>
+                                    <span class="bmd-form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">lock_outline</i>
+                        </span>
+                      </div>
+                      <input type="password" class="form-control" placeholder="Password..." name="password">
+                        @if ($errors->has('password'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
+                    </div>
+                  </span>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    {{--                                    <a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>--}}
+                                    <button type="submit" class="btn btn-danger btn-link btn-lg">Lets Go</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container" style="padding-top:0px!important;">
+
+                    <div class="copyright float-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        BBMS. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-</div>
+    <!-- END Page Content -->
 @endsection

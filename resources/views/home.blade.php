@@ -12,7 +12,7 @@
                 <div class="col-md-8">
                     <div class="card">
                     @if(Auth::user()->role === 1)
-                        <div class="card-header card-header-primary">
+                        <div class="card-header card-header-danger">
                             <h4 class="card-title mt-0">Blood Bank</h4>
                             <p class="card-category">Quantity for each group of blood</p>
                         </div>
@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         @else
-                            <div class="card-header card-header-primary">
+                            <div class="card-header card-header-danger">
                                 <h4 class="card-title mt-0">Donations</h4>
                                 <p class="card-category">Donations you have done!</p>
                             </div>
