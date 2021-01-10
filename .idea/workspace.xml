@@ -67,26 +67,7 @@
       <change afterPath="C:/xampp/htdocs/shkolla/.idea/shkolla.iml" afterDir="false" />
       <change afterPath="C:/xampp/htdocs/taskmanager/resources/views/summer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/entry.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/entry.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/camps.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/camps.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/donations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/donations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/editDonation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/editDonation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/editRequest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/editRequest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newBloodGroup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newBloodGroup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newDonation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newDonation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newEditCamp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newEditCamp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newEditUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newEditUser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/newRequest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/newRequest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/requests.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/requests.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/users.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/resources/sass/style1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/resources/views/person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Favorite/resources/views/guests.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../portal/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../portal/resources/views/layouts/app.blade.php" afterDir="false" />
@@ -322,7 +303,8 @@
       <workItem from="1609572442261" duration="42624000" />
       <workItem from="1609962114632" duration="1115000" />
       <workItem from="1610219463610" duration="24000" />
-      <workItem from="1610219678461" duration="10328000" />
+      <workItem from="1610219678461" duration="11354000" />
+      <workItem from="1610266005205" duration="772000" />
     </task>
     <servers />
   </component>
@@ -342,10 +324,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="170" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1609614615478" />
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1610219475029">
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1610266014921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1610219475029" />
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1610266014921" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609614451367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
