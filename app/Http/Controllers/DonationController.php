@@ -78,20 +78,20 @@ class DonationController extends Controller
             $newDoantion->donation_date = $validatedData['donation_date'];
             $newDoantion->quantity = $validatedData['quantity'];
             $newDoantion->save();
-//            if ($newDoantion !== null) {
+           if ($newDoantion !== null) {
 
-//                $blood_group_bank = BloodBank::where('blood_id', ($validatedData['blood_id']))->first();
-////        dd($blood_group_bank);
-//                if ($blood_group_bank !== null) {
-//                    $blood_group_bank->update(['quantity' => $blood_group_bank->quantity + $validatedData['quantity']]);
-//                } else {
-//                    $newBloodBank = new BloodBank();
-//                    $newBloodBank->blood_id = $validatedData['blood_id'];
-//                    $newBloodBank->quantity = $validatedData['quantity'];
-//                    $newBloodBank->save();
-//                }
-//            }
-            return redirect('/home')->with('success', 'Donation Added Successfully');
+               $blood_group_bank = BloodBank::where('blood_id', ($validatedData['blood_id']))->first();
+//        dd($blood_group_bank);
+               if ($blood_group_bank !== null) {
+                   $blood_group_bank->update(['quantity' => $blood_group_bank->quantity + $validatedData['quantity']]);
+               } else {
+                   $newBloodBank = new BloodBank();
+                   $newBloodBank->blood_id = $validatedData['blood_id'];
+                   $newBloodBank->quantity = $validatedData['quantity'];
+                   $newBloodBank->save();
+               }
+           }
+            return redirect('/home')->with('success', 'Donation Added Successfully')->with('bloods',$blood_group_bank);
         } else {
             return redirect()->back()->with('error', 'This donation cannot be done! Your last time donation is too early or you are too young!');
         }
@@ -142,16 +142,16 @@ class DonationController extends Controller
 
         if ($user->age > 16 && $interval->format('%a') > 56) {
             $donation->update($updatedData);
-//            $blood_group_bank = BloodBank::where('blood_id', ($validatedData['blood_id']))->first();
-//        dd($blood_group_bank);
-//            if ($blood_group_bank !== null) {
-//                $blood_group_bank->update(['quantity' => $blood_group_bank->quantity + $validatedData['quantity'] - $beforeQunatity,]);
-//            } else {
-//                $newBloodBank = new BloodBank();
-//                $newBloodBank->blood_id = $validatedData['blood_id'];
-//                $newBloodBank->quantity = $validatedData['quantity'];
-//                $newBloodBank->save();
-//            }
+            $blood_group_bank = BloodBank::where('blood_id', ($validatedData['blood_id']))->first();
+            
+            if ($blood_group_bank !== null) {
+                $blood_group_bank->update(['quantity' => $blood_group_bank->quantity + $validatedData['quantity'] - $beforeQunatity,]);
+            } else {
+                $newBloodBank = new BloodBank();
+                $newBloodBank->blood_id = $validatedData['blood_id'];
+                $newBloodBank->quantity = $validatedData['quantity'];
+                $newBloodBank->save();
+            }
             return redirect('/home')->with('success', 'Donation Updated Successfully');
         } else {
             return redirect()->back()->with('error', 'This donation cannot be done! Your last time donation is too early or you are too young!');

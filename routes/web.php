@@ -33,7 +33,7 @@ Route::get('/edit/user/{id}','UserController@editUser')->name('editUser');
 Route::post('/update/user/{id}','UserController@updateUser')->name('updateUser');
 
 Route::get('/add/camp','CampController@addCamp')->name('addCamp');
-Route::post('/save/user','CampController@saveCamp')->name('saveCamp');
+Route::post('/save/camp','CampController@saveCamp')->name('saveCamp');
 
 Route::get('/edit/camp/{id}','CampController@editCamp')->name('editCamp');
 Route::post('/update/camp/{id}','CampController@updateCamp')->name('updateCamp');
@@ -72,4 +72,6 @@ Route::get('/readNotifications',"HomeController@readNotifications")->name('readN
 Route::get('/confirm/donation/{id}','DonationController@confirmDonation')->name('confirmDonation');
 Route::get('/confirm/request/{id}','RequestController@confirmRequest')->name('confirmRequest');
 Route::post('/save/user','UserController@saveUser')->name('saveUser');
+Route::get('email/resend','Auth\VerificationController@resend')->name('verification.resend');
+
 

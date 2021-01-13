@@ -36,6 +36,44 @@
                     $('#deleteModal').modal('show');
                 }
             });
+
+            $('.js-dataTable-full').DataTable({
+                dom: 'Bfrtip',
+                buttons: [{
+                        extend: 'pdf',
+                        title: 'PDF exportation of data',
+                        exportOptions: {
+                            columns: "thead th:not(:last-child)"
+                        },
+                        filename: function(){
+                            var d = new Date();
+                            var n = d.getTime();
+                            return 'Users_' + n;
+                        }
+                    },{
+                        extend: 'excel',
+                        title: 'Excel exportation of data',
+                        exportOptions: {
+                            columns: "thead th:not(:last-child)"
+                        },
+                        filename: function(){
+                            var d = new Date();
+                            var n = d.getTime();
+                            return 'Users_' + n;
+                        }
+                    }, {
+                        extend: 'csv',
+                        title: 'CSV exportation of data',
+                        exportOptions: {
+                            columns: "thead th:not(:last-child)"
+                        },
+                        filename: function(){
+                            var d = new Date();
+                            var n = d.getTime();
+                            return 'Users_' + n;
+                        }
+                    }]
+            } );
         });
     </script>
 @endsection
