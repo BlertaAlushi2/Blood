@@ -80,7 +80,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Quantity</label>
                                             <input type="text" class="form-control" name="quantity" value="{{old('quantity')}}">
@@ -91,7 +91,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Request Date</label>
                                             <input type="date" class="form-control" placeholder="" name="request_date" value="{{old('request_date')}}">
@@ -103,7 +103,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-danger pull-right">New Request</button>
+                                <button type="submit" class="btn btn-danger pull-right" style="margin-top:25px;">New Request</button>
                                 <div class="clearfix"></div>
                             </form>
                         </div>

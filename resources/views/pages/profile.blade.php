@@ -13,6 +13,7 @@
                         <div class="card-body">
                             <form method="POST" action="{{route('editProfile',$user->id)}}" enctype="multipart/form-data">
                                 @csrf
+                                <br/>
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
@@ -48,8 +49,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <br/>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Age</label>
                                             <input type="number" class="form-control" name="age" value="{{old('age',$user->age)}}">
@@ -77,7 +79,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Weight</label>
                                             <input type="text" class="form-control" name="weigh" value="{{old('weigh',$user->weigh)}}">
@@ -105,6 +107,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <br/>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -171,6 +174,7 @@
 {{--                                        </div>--}}
 {{--                                    </div>--}}
 {{--                                </div>--}}
+                                <br/>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">

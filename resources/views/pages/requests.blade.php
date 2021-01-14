@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-danger">
-                            <h4 class="card-title mt-0">Camps</h4>
+                            <h4 class="card-title mt-0">Requests</h4>
 
                             @if(session()->has('success'))
                                 <p class="text-success mb-0 hasText"><b>

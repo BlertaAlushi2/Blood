@@ -35,7 +35,6 @@
                 <td>
                     {{ $request->confirmed === 1 ? "True" :"False" }}
                 </td>
-                @if(Auth::user()->role===1)
                 <td>
                     <button type="button" rel="tooltip" title="Edit" class="btn btn-info btn-link btn-sm">
                         <a href="{{ route('editRequest',$request->id) }}" class="text-info">
@@ -46,6 +45,7 @@
                     <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm deleteCourse" data-url="{{route('deleteRequest',$request->id) }}">
                         <i class="material-icons">close</i>
                     </button>
+                @if(Auth::user()->role===1)
                     @if($request->confirmed)
                     <button type="button" rel="tooltip" title="Edit" class="btn btn-info btn-link btn-sm">
                         <a href="{{ route('confirmRequest',$request->id) }}" onclick="return confirm('Are you sure?');" class="text-info">

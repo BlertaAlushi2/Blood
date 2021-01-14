@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Age</label>
                                             <input type="number" class="form-control" name="age" value="{{old('age',isset($user) ? $user->age:'')}}">
@@ -77,7 +77,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3" style="margin-top:35px;">
                                         <div class="form-group">
                                             <label class="bmd-label-floating">Weight</label>
                                             <input type="text" class="form-control" name="weigh" value="{{old('weigh',isset($user) ? $user->weigh:'')}}">
