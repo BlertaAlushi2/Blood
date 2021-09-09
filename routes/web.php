@@ -75,3 +75,4 @@ Route::post('/save/user','UserController@saveUser')->name('saveUser');
 Route::get('email/resend','Auth\VerificationController@resend')->name('verification.resend');
 
 
+//new branch
