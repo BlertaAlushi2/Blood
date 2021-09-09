@@ -76,3 +76,4 @@ Route::get('email/resend','Auth\VerificationController@resend')->name('verificat
 
 
 //new branch
+// main branch
